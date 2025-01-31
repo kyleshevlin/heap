@@ -1,6 +1,6 @@
 {
   "name": "@kyleshevlin/heap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a basic, customizable heap implementation in TypeScript",
   "type": "module",
   "source": "src/index.ts",

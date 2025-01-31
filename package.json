@@ -1,0 +1,44 @@
+{
+  "name": "@kyleshevlin/heap",
+  "version": "0.1.0",
+  "description": "a basic, customizable heap implementation in TypeScript",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "./dist/heap.cjs",
+  "module": "./dist/heap.module.js",
+  "unpkg": "./dist/heap.umd.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    "require": "./dist/heap.cjs",
+    "default": "./dist/heap.modern.js"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "format": "prettier --write src/**/*.ts",
+    "prerelease": "rm -rf dist && npm run build",
+    "release": "npx np",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (https://kyleshevlin.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleshevlin/heap.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1"
+  }
+}

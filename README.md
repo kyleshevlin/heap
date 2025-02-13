@@ -8,7 +8,7 @@ Just a basic, customizable heap implementation in TypeScript
 import { Heap, MinHeap, MaxHeap } from '@kyleshevlin/heap'
 
 const min = new MinHeap()
-const max = new MinHeap()
+const max = new MaxHeap()
 
 type Task = {
   priority: number

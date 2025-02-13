@@ -20,11 +20,11 @@ const custom = new Heap<Task>((a, b) => a.priority < b.priority)
 ## API
 
 - `constructor<T>(comparator: (a: T, b: T) => boolean)`
-- `clear`
+- `clear()`
 - `insert(value: T)`
 - `insertMany(values: T[])`
-- `extract`
-- `peek`
+- `extract()`
+- `peek()`
 - `size`
 
 ## Tips

@@ -11,7 +11,7 @@ export class Heap<T> {
 
   toString() {
     const items = this.#heap.map(item => JSON.stringify(item, null, 2))
-    return `Heap { size: ${this.size()}, heap: [${items.join(', ')}] }`
+    return `Heap { size: ${this.size}, heap: [${items.join(', ')}] }`
   }
 
   [Symbol.for('nodejs.util.inspect.custom')]() {
@@ -110,7 +110,7 @@ export class Heap<T> {
     return this.#heap[0]
   }
 
-  size() {
+  get size() {
     return this.#heap.length
   }
 }

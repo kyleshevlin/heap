@@ -43,14 +43,14 @@ test('clear', () => {
   heap.insert(3)
 
   heap.clear()
-  expect(heap.size()).toEqual(0)
+  expect(heap.size).toEqual(0)
 })
 
 test('insertMany', () => {
   const heap = new MinHeap()
   heap.insertMany([1, 2, 3])
   expect(heap.peek()).toEqual(1)
-  expect(heap.size()).toEqual(3)
+  expect(heap.size).toEqual(3)
 })
 
 test('peek', () => {
@@ -68,5 +68,5 @@ test('size', () => {
   heap.insert(2)
   heap.insert(3)
 
-  expect(heap.size()).toEqual(3)
+  expect(heap.size).toEqual(3)
 })

@@ -42,6 +42,7 @@ test('clear', () => {
   heap.insert(2)
   heap.insert(3)
 
+  expect(heap.size).toEqual(3)
   heap.clear()
   expect(heap.size).toEqual(0)
 })
@@ -65,8 +66,9 @@ test('peek', () => {
 test('size', () => {
   const heap = new MinHeap()
   heap.insert(1)
+  expect(heap.size).toEqual(1)
   heap.insert(2)
+  expect(heap.size).toEqual(2)
   heap.insert(3)
-
   expect(heap.size).toEqual(3)
 })
